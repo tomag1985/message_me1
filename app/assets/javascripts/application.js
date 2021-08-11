@@ -11,6 +11,19 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require semantic-ui
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+
+$(document).on('turbolinks:load', function functionName() {
+  $('.ui.dropdown').dropdown();
+  $('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  });
+})
