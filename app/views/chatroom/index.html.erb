@@ -27,25 +27,16 @@
     <div class="four wide column">
       <div class="ui fluid raised card chatbox">
         <div class="content">
-          <div class="ui inverted vertical menu">
-            <a class="active item">
-              Home
-            </a>
-            <a class="item">
-              Messages
-            </a>
-            <a class="item">
-              Friends
-            </a>
+          <h3>Some registered users:</h3>
+          <div class="ui inverted vertical menu">          
+            <% @users.each do |user|  %>
+              <div class="active item">
+                <%= user.username %>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-
-
-
-<%= raise %>
